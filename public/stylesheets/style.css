@@ -5,12 +5,26 @@ html {
 }
 body {
   background-color: #fff;
-  border-top: solid 10px #000;
   color: #333;
   font-size: .85em;
-  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+  font-family: 'Open Sans', "Segoe UI", Verdana, Helvetica, Sans-Serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+    min-height: 900px;
+}
+body:before 
+{ 
+   content: "";
+   position: fixed;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   z-index: 100;
+   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
 a:link,
 a:visited,
@@ -525,3 +539,47 @@ a.twitter {
     width: auto;
   }
 }
+  /* custom stuff
+      ----------------------------------------------------------*/
+.imagebackground {
+    background: url("../images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    min-height: 900px;
+    
+    /* flexbox, por favor */
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+ 
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+  
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+    
+    display: -ms-flexbox;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+    
+}
+#welcomesprite {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    width: 500px;
+    text-align: center;
+    box-shadow: 3px 3px 30px 20px rgba(0,0,0,.1);
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
