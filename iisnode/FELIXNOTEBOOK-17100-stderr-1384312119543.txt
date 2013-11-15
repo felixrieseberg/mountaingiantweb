@@ -1,0 +1,13 @@
+path.existsSync is now called `fs.existsSync`.
+Application has thrown an uncaught exception and is terminated:
+TypeError: Cannot read property 'coupon' of undefined
+    at Object.Azsapi_couponManager.validateCoupon (C:\Users\feriese\Documents\My Web Sites\mountainandgiant\routes\azsapi-couponManager.js:15:38)
+    at module.exports (C:\Users\feriese\Documents\My Web Sites\mountainandgiant\routes\azsapi.js:17:61)
+    at Object.<anonymous> (C:\Users\feriese\Documents\My Web Sites\mountainandgiant\server.js:64:27)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:362:17)
+    at require (module.js:378:17)
+    at Object.<anonymous> (C:\Program Files (x86)\iisnode-dev\release\x86\interceptor.js:210:1)
