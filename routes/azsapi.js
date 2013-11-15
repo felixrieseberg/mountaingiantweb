@@ -3,14 +3,17 @@
 module.exports = function (app) {
 
     // Creating coupon manager and connection to MongoLab
-    var azsapi_mongolab_url = "mongodb://mg-mongo:80cdiMjOb7Wxk7EWEIaFPWsO_couhJcPDyCN8b0VFzE-@ds027758.mongolab.com:27758/mg-mongo";
     var base = "/api/azs/1/";
+    var mongodb = process.env.mongohq_url; 
+
+    // Remember to set up code here
+
 
     var mongoose = require('mongoose');
     var Schema = mongoose.Schema;
 
     // Connect
-    mongoose.connect(azsapi_mongolab_url);
+    mongoose.connect(mongodb);
 
     var couponSchema = new Schema({
         identifier: String,
